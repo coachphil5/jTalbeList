@@ -6,7 +6,7 @@ import java.awt.Color;
 /**
  * Created by JOINTJUICE on 3/19/14.
  */
-public class jTalbeListTxt {
+public class jTableListTxt {
   private JPanel panel1;
   /*  private JTable table1;
     private JScrollPane jScroll1;
@@ -64,7 +64,7 @@ InsertFileDataToJTable model = new InsertFileDataToJTable();
 JFrame frame = new JFrame("Table Practice");
 table1 = new Tabel1 InsertFileDataToJTable();
         // table1.setModel(new model);
-        frame.setContentPane(new jTalbeListTxt().panel1);
+        frame.setContentPane(new jTableListTxt().panel1);
         //panel1.add(table1.setModel(model));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
