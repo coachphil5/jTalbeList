@@ -1,0 +1,44 @@
+
+
+
+
+/*
+
+      InsertFileDataToJTable model = new InsertFileDataToJTable();
+        JTable table = new JTable();
+        table.setModel(model);
+        JScrollPane scrollpane = new JScrollPane(table);
+        JPanel panel = new JPanel();
+        panel.add(scrollpane);
+        JFrame frame = new JFrame();
+        frame.add(panel, "Center");
+        frame.pack();
+        frame.setVisible(true);
+*/
+
+
+
+/*
+InsertFileDataToJTable model = new InsertFileDataToJTable();
+JFrame frame = new JFrame("Table Practice");
+table1 = new Tabel1 InsertFileDataToJTable();
+        // table1.setModel(new model);
+        frame.setContentPane(new jTableListTxt().panel1);
+        //panel1.add(table1.setModel(model));
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);*/
+
+
+/*
+class MyRenderer implements TableCellRenderer {
+    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+                                                   boolean hasFocus, int row, int column) {
+        JTextField editor = new JTextField();
+        if (value != null)
+            editor.setText(value.toString());
+        editor.setBackground((row % 2 == 0) ? Color.white : Color.cyan);
+        return editor;
+    }
+}
+*/
