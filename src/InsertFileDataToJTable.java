@@ -1,9 +1,9 @@
 import javax.swing.table.AbstractTableModel;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.Vector;
-import java.io.FileInputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 /**
  * Created by JOINTJUICE on 3/19/14.
@@ -17,10 +17,9 @@ public class InsertFileDataToJTable extends AbstractTableModel {
         data = new Vector();
         columns = new Vector();
         try {
-            FileInputStream fis = new FileInputStream(System.getProperty("user.home") +"/Desktop/phonelist.txt");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.home") + "/Desktop/phonelist.txt");
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
             StringTokenizer st1 = new StringTokenizer(br.readLine(), "\t");
-            //System.out.println(st1.nextToken());
             while (st1.hasMoreTokens())
                 columns.addElement(st1.nextToken());
             while ((line = br.readLine()) != null) {
@@ -46,6 +45,7 @@ public class InsertFileDataToJTable extends AbstractTableModel {
         return (String) data.elementAt((rowIndex * getColumnCount())
                 + columnIndex);
     }
+
     public String getColumnName(int col) {
         return columns.get(col).toString();
     }

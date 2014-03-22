@@ -1,3 +1,15 @@
+     public static void main(String s[]) {
+                InsertFileDataToJTable model = new InsertFileDataToJTable();
+                JTable table = new JTable();
+                table.setModel(model);
+                JScrollPane scrollpane = new JScrollPane(table);
+                JPanel panel = new JPanel();
+                panel.add(scrollpane);
+                JFrame frame = new JFrame();
+                frame.add(panel, "Center");
+                frame.pack();
+                frame.setVisible(true);
+        }
 
 
 
